@@ -59,6 +59,11 @@ nav li button {
   float: right;
 }
 
+#error {
+  text-align: center;
+  color: red;
+}
+
 section {
   margin: 20px;
   display: flex;

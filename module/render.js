@@ -3,6 +3,7 @@ import navListDisplay from './navigation-list-display.js';
 const bookName = document.getElementById('name');
 const author = document.getElementById('author');
 const output = document.querySelector('.list-elements');
+const error = document.getElementById('error');
 
 export default class Collection {
   constructor() {
@@ -53,17 +54,23 @@ export default class Collection {
   // class to push items into array and display them
 
   addBooks() {
-    const bookObj = {
-      id: new Date().getTime().toString(),
-      book: bookName.value,
-      author: author.value,
-    };
-    this.arr.push(bookObj);
-    console.log(this.arr);
-    this.UpdateLocalStorage();
-    output.innerHTML = '';
-    this.display(this.arr);
-    navListDisplay();
+    if(bookName.value === '' || author.value === ''){
+      error.textContent = 'Please type in Book name and author name';
+    }else{
+      
+    error.textContent = '';
+      const bookObj = {
+        id: new Date().getTime().toString(),
+        book: bookName.value,
+        author: author.value,
+      };
+      this.arr.push(bookObj);
+      console.log(this.arr);
+      this.UpdateLocalStorage();
+      output.innerHTML = '';
+      this.display(this.arr);
+      navListDisplay();
+    }
   }
 
   // class to remove items from array and display them
