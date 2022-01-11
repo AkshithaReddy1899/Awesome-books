@@ -14,11 +14,11 @@ export default class Collection {
 
   getBooks() {
     if (localStorage.getItem('booksList') === null) {
-      return this.arr = [];
-    } else {
-      return this.arr = JSON.parse(localStorage.getItem('booksList'));
-      
+      this.arr = [];
+      return this.arr;
     }
+    this.arr = JSON.parse(localStorage.getItem('booksList'));
+    return this.arr;
   }
 
   // class to update array in the local storage
@@ -48,24 +48,22 @@ export default class Collection {
   display(arr) {
     arr.forEach((item) => {
       this.pushListItem(item);
-    })
-  };
+    });
+  }
 
   // class to push items into array and display them
 
   addBooks() {
-    if(bookName.value === '' || author.value === ''){
+    if (bookName.value === '' || author.value === '') {
       error.textContent = 'Please type in Book name and author name';
-    }else{
-      
-    error.textContent = '';
+    } else {
+      error.textContent = '';
       const bookObj = {
         id: new Date().getTime().toString(),
         book: bookName.value,
         author: author.value,
       };
       this.arr.push(bookObj);
-      console.log(this.arr);
       this.UpdateLocalStorage();
       output.innerHTML = '';
       this.display(this.arr);

@@ -2,7 +2,7 @@ import Collection from './module/render.js';
 import navAddDisplay from './module/navigation-add-display.js';
 import navContactDisplay from './module/navigation-contact-display.js';
 import navListDisplay from './module/navigation-list-display.js';
-import { time } from './module/time.js';
+import time from './module/time.js';
 
 const collection = new Collection();
 
@@ -11,7 +11,7 @@ collection.getBooks();
 window.onload = () => {
   const arrList = collection.getBooks();
   collection.display(arrList);
-}
+};
 
 // event listener to trigger add class
 
@@ -21,10 +21,13 @@ document.querySelector('.addBtn').addEventListener('click', () => {
 });
 
 // luxon time
-document.getElementById('time').textContent = time();
 
+window.onload = () => {
+  setInterval(() => {
+    document.getElementById('time').textContent = time();
+  }, 100);
+};
 
-console.log(time())
 // NAVIGATION
 
 document.getElementById('nav-list').addEventListener('click', () => navListDisplay());
