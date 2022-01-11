@@ -32,7 +32,7 @@ export default class Collection {
 
     const p = document.createElement('p');
     p.className = 'book-name';
-    p.innerHTML = `${item.book} by ${item.author}`;
+    p.innerHTML = `<b>${item.book}</b> by ${item.author} &nbsp;&nbsp;&nbsp;`;
 
     const button = document.createElement('button');
     button.innerHTML = 'Remove';
