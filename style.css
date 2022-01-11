@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: cornflowerblue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+button {
+  border: 3px solid cornflowerblue;
+  background: transparent;
+  padding: 10px;
+  color: cornflowerblue;
+  font-weight: bolder;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav li button {
+  border: 1px solid cornflowerblue;
+  width: 80px;
+}
+
+.header {
+  font-family: cursive;
+  text-align: center;
+}
+
+#time {
+  float: right;
+}
+
+section {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#list {
+  display: block;
+}
+
+#add-book,
+#contact {
+  display: none;
+}
+
+main {
+  border: 1px solid cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 10px 0 20px;
+}
+
+.list-item {
+  border: 1px solid black;
+}
+
+main li {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid cornflowerblue;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+input {
+  width: 100%;
+  background: cornflowerblue;
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: black;
+}
+
+footer {
+  margin-top: 90px;
+  width: 100vw;
+  padding: 10px;
+  border: 1px solid cornflowerblue;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome Books</title>
+</head>
+
+<body>
+  <header>
+        <nav>
+            <p class="logo">Awesome Books</p>
+            <ul>
+                <li class="nav-items"><button type="button" id="nav-list">List</button></li>
+                <li class="nav-items"><button type="button" id="nav-add">Add</button></li>
+                <li class="nav-items"><button type="button" id="nav-contact">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <p id="time"></p>
+    <main>
+        <section id="list">
+            <h1 class="header">All awesome books</h1>
+            <ul class="list-elements">
+                <!-- Books -->
+            </ul>
+        </section>
+        <section id="add-book">
+            <h1 class="header">Add a new book</h1>
+            <form id="form">
+                <input type="text" id="name" placeholder="Title">
+                <input type="text" id="author" placeholder="Author">
+                <button type="button" class="addBtn">Submit</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h1 class="header">Contact</h1>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus quisquam libero. Delectus in animi, ullam voluptatem necessitatibus non quas odit commodi accusantium inventore totam fugiat, aliquid, laborum omnis dolore?</small>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <small>Copyright@2022</small>
+        </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+</body>
