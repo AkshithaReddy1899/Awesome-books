@@ -13,7 +13,7 @@ window.onload = () => {
   collection.display(arrList);
 
   // luxon time
-  
+
   setInterval(() => {
     document.getElementById('time').textContent = time();
   }, 100);
@@ -25,7 +25,6 @@ document.querySelector('.addBtn').addEventListener('click', () => {
   collection.getBooks();
   collection.addBooks();
 });
-
 
 // NAVIGATION
 
