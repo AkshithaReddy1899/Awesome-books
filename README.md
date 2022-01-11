@@ -8,7 +8,7 @@ Awesome books is a book library built as a part of my first project of week 2 (s
 
 
 
-![screenshot](https://user-images.githubusercontent.com/70577783/148977524-1ab59601-8bed-482c-9a9d-fc41bca6314a.png)
+![screenshot](https://user-images.githubusercontent.com/70577783/148981152-ebe100b9-ce35-4378-a5a5-af6a8414812b.png)
 
 
 ## Credits
