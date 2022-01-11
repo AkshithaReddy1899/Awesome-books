@@ -111,6 +111,8 @@ input {
   border: none;
   padding: 10px;
   margin: 20px;
+  color: black;
+  font-weight: bold;
 }
 
 input::placeholder {
