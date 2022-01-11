@@ -5,6 +5,9 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
   background-color: black;
   color: cornflowerblue;
   font-family: "Courier New", Courier, monospace;
@@ -52,6 +55,7 @@ nav li button {
 }
 
 #time {
+  margin-right: 20px;
   float: right;
 }
 
@@ -73,12 +77,13 @@ section {
 }
 
 main {
+  width: 500px;
   border: 1px solid cornflowerblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 100px 10px 0 20px;
+  margin: 100px auto;
 }
 
 .list-item {

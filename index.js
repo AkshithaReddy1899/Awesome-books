@@ -2,11 +2,16 @@ import Collection from './module/render.js';
 import navAddDisplay from './module/navigation-add-display.js';
 import navContactDisplay from './module/navigation-contact-display.js';
 import navListDisplay from './module/navigation-list-display.js';
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import { time } from './module/time.js';
 
 const collection = new Collection();
 
 collection.getBooks();
+
+window.onload = () => {
+  const arrList = collection.getBooks();
+  collection.display(arrList);
+}
 
 // event listener to trigger add class
 
@@ -16,11 +21,10 @@ document.querySelector('.addBtn').addEventListener('click', () => {
 });
 
 // luxon time
+document.getElementById('time').textContent = time();
 
-const time = DateTime.now();
 
-document.getElementById('time').textContent = time;
-
+console.log(time())
 // NAVIGATION
 
 document.getElementById('nav-list').addEventListener('click', () => navListDisplay());

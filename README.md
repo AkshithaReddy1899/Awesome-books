@@ -1,6 +1,6 @@
 ## Awesome books with Modular Javascript
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot]()
 
 ## How To Use
 

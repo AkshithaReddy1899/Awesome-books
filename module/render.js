@@ -13,9 +13,10 @@ export default class Collection {
 
   getBooks() {
     if (localStorage.getItem('booksList') === null) {
-      this.arr = [];
+      return this.arr = [];
     } else {
-      this.arr = JSON.parse(localStorage.getItem('booksList'));
+      return this.arr = JSON.parse(localStorage.getItem('booksList'));
+      
     }
   }
 
@@ -31,7 +32,7 @@ export default class Collection {
 
     const p = document.createElement('p');
     p.className = 'book-name';
-    p.innerHTML = `${item.bookName} by ${item.author}`;
+    p.innerHTML = `${item.book} by ${item.author}`;
 
     const button = document.createElement('button');
     button.innerHTML = 'Remove';
@@ -43,6 +44,12 @@ export default class Collection {
     output.appendChild(li);
   }
 
+  display(arr) {
+    arr.forEach((item) => {
+      this.pushListItem(item);
+    })
+  };
+
   // class to push items into array and display them
 
   addBooks() {
@@ -52,11 +59,10 @@ export default class Collection {
       author: author.value,
     };
     this.arr.push(bookObj);
+    console.log(this.arr);
     this.UpdateLocalStorage();
     output.innerHTML = '';
-    this.arr.forEach((item) => {
-      this.pushListItem(item);
-    });
+    this.display(this.arr);
     navListDisplay();
   }
 
