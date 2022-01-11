@@ -1,31 +1,18 @@
 ## Awesome books with Modular Javascript
 
-![screenshot]()
+Awesome books is a book library built as a part of my first project of week 2 (second module) of my Microverse journey with vanilla JavaScript using Local storage, modular javascript, node package manager, ES6, luxon dependency to display the current date.
 
-## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+![screenshot](https://user-images.githubusercontent.com/70577783/148977524-1ab59601-8bed-482c-9a9d-fc41bca6314a.png)
 
-```bash
-# Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
 
-# Go into the repository
-$ cd electron-markdownify
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
 ## Credits
 
 This project uses the following open source packages:
 
 - HTML
 - CSS
-- Modular JavaScript
+- node
 - Luxon
 
 ## License
