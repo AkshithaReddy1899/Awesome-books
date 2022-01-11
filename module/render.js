@@ -77,8 +77,6 @@ export default class Collection {
     this.arr = this.arr.filter((e) => e.id !== id);
     output.innerHTML = '';
     this.UpdateLocalStorage();
-    this.arr.forEach((item) => {
-      this.pushListItem(item);
-    });
+    this.display(this.arr);
   }
 }

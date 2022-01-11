@@ -11,6 +11,12 @@ collection.getBooks();
 window.onload = () => {
   const arrList = collection.getBooks();
   collection.display(arrList);
+
+  // luxon time
+  
+  setInterval(() => {
+    document.getElementById('time').textContent = time();
+  }, 100);
 };
 
 // event listener to trigger add class
@@ -20,13 +26,6 @@ document.querySelector('.addBtn').addEventListener('click', () => {
   collection.addBooks();
 });
 
-// luxon time
-
-window.onload = () => {
-  setInterval(() => {
-    document.getElementById('time').textContent = time();
-  }, 100);
-};
 
 // NAVIGATION
 
