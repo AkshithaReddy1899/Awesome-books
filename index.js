@@ -3,6 +3,7 @@ import navAddDisplay from './module/navigation-add-display.js';
 import navContactDisplay from './module/navigation-contact-display.js';
 import navListDisplay from './module/navigation-list-display.js';
 import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+
 const collection = new Collection();
 
 collection.getBooks();
@@ -14,12 +15,11 @@ document.querySelector('.addBtn').addEventListener('click', () => {
   collection.addBooks();
 });
 
-//luxon time
+// luxon time
 
 const time = DateTime.now();
 
 document.getElementById('time').textContent = time;
-
 
 // NAVIGATION
 
